@@ -26,6 +26,7 @@ public:
 
     FixedPoint& operator-=(const FixedPoint& b) { m_value -= b.m_value; return *this; }
     const FixedPoint operator-(const FixedPoint& b) const { FixedPoint result = *this; result -= b; return result; }
+    FixedPoint& operator-() { m_value *= -1 ; return *this; }
 
     FixedPoint& operator*=(const FixedPoint& b) { m_value *= b.m_value; return *this; }
     const FixedPoint operator*(const FixedPoint& b) const { FixedPoint result = *this; result *= b; return result; }
@@ -71,6 +72,8 @@ typedef FixedPoint<int16_t, 10>     F16x1;
 typedef FixedPoint<uint16_t, 10>    UF16x1;
 typedef FixedPoint<int16_t, 100>    F16x2;
 typedef FixedPoint<uint16_t, 100>   UF16x2;
+typedef FixedPoint<int16_t, 1000>    F16x3;
+typedef FixedPoint<uint16_t, 1000>   UF16x3;
 
 typedef FixedPoint<int32_t, 10>     F32x1;
 typedef FixedPoint<uint32_t, 10>    UF32x1;
