@@ -1,7 +1,7 @@
 {
   "name": "fixedpoint",
-  "version": "0.0.2",
-  "description": "Library implements trivial class for FixedPoint (fixed decimals) numbers with basic operators.",
+  "version": "0.0.3",
+  "description": "Library implements trivial class for FixedPoint (fixed integer and fraction bits) numbers with basic operators.",
   "keywords": "fixedpoint, float, fixed",
   "repository":
   {
@@ -12,10 +12,11 @@
   [
     {
       "name": "sobieh",
-      "email": "sobieh@gmail.com"
+      "email": "sobieh@gmail.com",
+      "url": "https://github.com/sobieh"
     }
   ],
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "frameworks": "*",
   "platforms": "*"
 }
